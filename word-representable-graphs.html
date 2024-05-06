@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1250">
+    <title>Julia Elliot -- Word-representable graphs software</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <base target="_blank">
+  </head>
+  <body vlink="#000000" link="#000000" leftmargin="25"
+    background="images/background.gif" alink="#000000">
+    <br>
+    <br>
+    <b class="par">W</b>ord-representable graphs <br>
+    <br>
+    A graph G = (V, E) is word-representable if there exists a word w
+    over V such that x and y alternate in w if and only if (x,y) is in
+    E. A comprehensive introduction to the theory of word-representable
+    graphs is given in the book "<a
+      href="http://www.springer.com/us/book/9783319258577">Words and
+      Graphs</a>" by Sergey Kitaev and Vadim Lozin published by <i>Springer</i>.
+    Also, see "<a href="http://personal.strath.ac.uk/sergey.kitaev/Papers/wrg-kitaev.pdf">A
+      Comprehensive Introduction to the Theory of Word-Representable
+      Graphs</a>" by Kitaev published in the <i>Lecture Notes in
+      Computer Science</i> 10396. Moreover, see the <a
+      href="https://en.wikipedia.org/wiki/Word-representable_graph">wiki
+      page</a> giving basic information on the theory and its
+    generalizations. A key result in the theory of word-representable
+    graphs is the theorem stating that a graph is word-representable if
+    and only if it admits a <i>semi-transitive orientation</i>. <br>
+    <br>
+    The user-friendly program <br>
+    <br>
+    <a href="RepresentableGraphs.jar">RepresentableGraphs.jar</a> <br>
+    <br>
+    to work with word-representability of graphs, that requires Java
+    version 7 or higher, was written by me in 2014-15, and it is
+    based on the notion of a semi-transitive orientation. This program
+    presents a graph in matrix form on the left, and in graphical form
+    on the right. Edges are added/removed by clicking on the appropriate
+    entry in the matrix. The program presents the following
+    functionality: <br>
+    <br>
+    <b class="par">M</b>anipulating the graph <br>
+    <br>
+    Controls for manipulating the graph are on the left-hand side panel.
+    There is an "oriented/non-oriented" pair of radio buttons, which
+    toggles which type of edge is placed on the graph. The up and down
+    arrows decrease and increase the size of the matrix respectively
+    (that is, removes the highest vertex, or adds a new one). The
+    "clear" button completely removes all edges from the current graph.<br>
+    <br>
+    <b class="par">C</b>hecking for word-representability <br>
+    <br>
+    Controls for checking the word-representability of a graph are at
+    the bottom of the window. The button "Is this orientation
+    semi-transitive?" checks whether the given fully-oriented graph is
+    semi-transitively oriented. The button "Is this graph
+    word-representable?" checks whether a given (non-oriented) graph is
+    word-representable, and if it is, it outputs a semi-transitive
+    orientation of the graph, and a uniform word representing it. If you
+    orient some (but not all) edges before clicking the button, these
+    will be used as clues for what kind of orientation a semi-transitive
+    orientation may be. So for example, if you orient one particular
+    edge in one way, the program will not check any of the oriented
+    graphs where that edge was oriented the other way, when searching
+    for a semi-transitive orientation. The button "Get word representing
+    this graph" will show a uniform word representing the current graph,
+    if the graph is indeed word-representable, and will allow the user
+    to save that word to a file.<br>
+    <br>
+    <b class="par">M</b>enu bar <br>
+    <br>
+    <b class="par">F</b>ile menu<br>
+    <br>
+    <b class="par">N</b>ew - loads a graph with no edges and the current
+    number of vertices<br>
+    <br>
+    <b class="par">L</b>oad - loads a saved graph<br>
+    <br>
+    <b class="par">S</b>ave - saves the current graph<br>
+    <br>
+    <b class="par">Q</b>uit - quits the application<br>
+    <br>
+    <b class="par">W</b>ord menu<br>
+    <br>
+    <b class="par">L</b>oad graph from word - accepts a word as input
+    and loads a graph that the word represents.<br>
+    <br>
+    <b class="par">C</b>heck if word represents this graph - accepts a
+    word as input and checks whether that word represents the current
+    graph.<br>
+    <br>
+    <b class="par">G</b>et uniform word from word - accepts a word as
+    input and outputs a uniform word representing the same graph. <br>
+    <br>
+    <br>
+    <br>
+
+  </body>
+</html>
+
